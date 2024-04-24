@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  display: flex;          /* Use flexbox to layout children */
+  list-style-type: none;  /* Remove bullet points from the list */
+  margin: 0;              /* Remove margin */
+  padding: 0;             /* Remove padding */
+  background-color: #333; /* Dark background for the navbar */
+  justify-content: space-evenly; /* Evenly space navbar items */
+}
+
+.navbar li {
+  flex-grow: 1;           /* Allow each item to grow */
+}
+
+.navbar li a {
+  display: block;         /* Make links fill the list item */
+  text-align: center;     /* Center text horizontally */
+  padding: 14px 16px;     /* Padding for spacing and size */
+  color: white;           /* Text color for links */
+  text-decoration: none;  /* No underline on links */
+}
+
+.navbar li a:hover {
+  background-color: #111; /* Darker background on hover */
+}

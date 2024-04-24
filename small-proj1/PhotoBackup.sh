@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Create directories for source and target
-mkdir -p testdirectory
-mkdir -p target
+mkdir -p psuedo-photos
+mkdir -p backup
 
 # Path definitions
-sourcedir="./testdirectory"
-targetdir="./target"
+sourcedir="./psuedo-photos"
+targetdir="./backup"
 
 # Function to create an image and modify its creation date
 create_image() {
