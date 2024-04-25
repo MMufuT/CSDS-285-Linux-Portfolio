@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import CustomCodeBlock from '../components/codeBlock';
+import DocTitle from '../components/docTitle';
 
 const DoOrDie = () => {
+    DocTitle('Do Or Die')
 
     const bashScript = `
         #!/bin/bash

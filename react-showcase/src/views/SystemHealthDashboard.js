@@ -1,8 +1,11 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import CustomCodeBlock from '../components/codeBlock';
+import DocTitle from '../components/docTitle';
 
 const SystemHealthDashboard = () => {
+    DocTitle('System Health Dashboard')
+
     const bashScript = `
 #!/bin/bash
 

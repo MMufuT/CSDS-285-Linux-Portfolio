@@ -1,8 +1,10 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 import CustomCodeBlock from '../components/codeBlock';
+import DocTitle from '../components/docTitle';
 
 const Cleanup = () => {
+    DocTitle('Cleanup')
 
     const bashScript = `
         #!/bin/bash

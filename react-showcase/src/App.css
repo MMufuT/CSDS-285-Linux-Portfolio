@@ -38,26 +38,26 @@
 }
 
 .navbar {
-  display: flex;          /* Use flexbox to layout children */
-  list-style-type: none;  /* Remove bullet points from the list */
-  margin: 0;              /* Remove margin */
-  padding: 0;             /* Remove padding */
-  background-color: #333; /* Dark background for the navbar */
-  justify-content: space-evenly; /* Evenly space navbar items */
+  display: flex;          
+  list-style-type: none; 
+  margin: 0;             
+  padding: 0;            
+  background-color: #333;
+  justify-content: space-evenly; 
 }
 
 .navbar li {
-  flex-grow: 1;           /* Allow each item to grow */
+  flex-grow: 1;          
 }
 
 .navbar li a {
-  display: block;         /* Make links fill the list item */
-  text-align: center;     /* Center text horizontally */
-  padding: 14px 16px;     /* Padding for spacing and size */
-  color: white;           /* Text color for links */
-  text-decoration: none;  /* No underline on links */
+  display: block;        
+  text-align: center;     
+  padding: 14px 16px;     
+  color: white;           
+  text-decoration: none; 
 }
 
 .navbar li a:hover {
-  background-color: #111; /* Darker background on hover */
+  background-color: #111; 
 }
