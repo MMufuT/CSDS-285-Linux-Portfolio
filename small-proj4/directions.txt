@@ -1,31 +1,11 @@
-Large Project: HTML System Health Dashboard
+Small Project 4: Do or Die
 ========================
 ========================
-
-
-NOTE FOR MacOS USERS:
-========================
-`get_cpu_usage()` and `get_mem_usage()` methods don't work on mac b/c the `top` and `free` commands
-have command line options unique to linux systems and don't work on mac. The rest of the dashboard will load
-correctly on MacOS.
-========================
-
-
-- The system runs fine on linux machines
-
 
 Directions:
 ========================
-1. Make script executable with `chmod +x SysHealthDash.sh`
-2. Execute command with `./SysHealthDash.sh`
-3.
-    3a. Open html file in browser (if you're machine allows you to)
-    3b. run `less system_health_dashboard.html` to view the html dashboard in the terminal
+1. Make script executable with `chmod +x DoOrDie.sh`
+2. Execute command with `./DoOrDie.sh`
+3. Enter your guess into the terminal (1 or 2)
+4. See how many times you can guess correctly!
 ========================
-
-
-Cleanup: (Will delete all files and directories not ending in `.txt` or `.sh`)
-========================
-1. Make cleanup file executable with `chmod +x cleanup.sh`
-2. Execute cleanup with `./cleanup.sh`
-

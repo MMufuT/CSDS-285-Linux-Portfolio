@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create directories for source and target
+# Create directories for pseudo photos and backup folder
 mkdir -p psuedo-photos
 mkdir -p backup
 
@@ -17,7 +17,7 @@ create_image() {
     touch -t $createdate $filename
 }
 
-# Generate images with various creation dates across different years
+# Generate images with various creation dates b/w 2016 and 2024
 years=(2016 2017 2018 2019 2020 2021 2022 2023 2024)
 for i in {1..100}; do
     year=${years[$RANDOM % ${#years[@]}]}
@@ -31,7 +31,7 @@ done
 
 echo "Mock data created in testdirectory."
 
-# Array of month names for mapping
+# Array of month names for mapping. Numbers are included in names so months are sorted from Jan to Dec as opposed to alphabetically
 month_names=("01-January" "02-February" "03-March" "04-April" "05-May" "06-June" "07-July" "08-August" "09-September" "10-October" "11-November" "12-December")
 
 # Function to organize photos by year and month name based on file's metadata
@@ -42,7 +42,7 @@ organize_photos() {
             year=$(date -r $file "+%Y")
             month_num=$(date -r $file "+%m")
             
-            # Ensure month_num is treated as decimal
+            # Ensure month_num is treated as decimal as opposed to an octal
             month_num=$((10#$month_num))
             month_name=${month_names[$((month_num - 1))]}
 

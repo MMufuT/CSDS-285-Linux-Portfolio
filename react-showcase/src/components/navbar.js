@@ -6,11 +6,11 @@ const Navbar = () => {
         <nav>
             <ul className="navbar">
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/largeProj">Large Project</Link></li>
-                <li><Link to="/smallProj1">Small Project 1</Link></li>
-                <li><Link to="/smallProj2">Small Project 2</Link></li>
-                <li><Link to="/smallProj3">Small Project 3</Link></li>
-                <li><Link to="/smallProj4">Small Project 4</Link></li>
+                <li><Link to="/SystemHealthDashboard">System Health Dashboard</Link></li>
+                <li><Link to="/PhotoBackup">Photo Backup</Link></li>
+                <li><Link to="/Cleanup">Cleanup</Link></li>
+                <li><Link to="/ServerHealthCheck">Server Health Check</Link></li>
+                <li><Link to="/DoOrDie">Do Or Die</Link></li>
             </ul>
         </nav>
     );

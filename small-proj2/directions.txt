@@ -1,23 +1,10 @@
-Small Project 2: HTML System Health Dashboard
+Small Project 2: Cleanup Script
 ========================
 ========================
-
-
-- The system runs fine on linux machines
-
 
 Directions:
 ========================
-1. Make script executable with `chmod +x SysHealthDash.sh`
-2. Execute command with `./SysHealthDash.sh`
-3.
-    3a. Open html file in browser (if you're machine allows you to)
-    3b. run `less system_health_dashboard.html` to view the html dashboard in the terminal
+1. Make script executable with `chmod +x cleanup.sh`
+2. Create some empty folders and files to test cleanup script
+2. Execute command with `./cleanup.sh`
 ========================
-
-
-Cleanup: (Will delete all files and directories not ending in `.txt` or `.sh`)
-========================
-1. Make cleanup file executable with `chmod +x cleanup.sh`
-2. Execute cleanup with `./cleanup.sh`
-

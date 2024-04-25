@@ -3,22 +3,18 @@
 # Define the output HTML file
 output="system_health_dashboard.html"
 
-# Function to get CPU usage
 get_cpu_usage() {
     echo "$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')"
 }
 
-# Function to get memory usage
 get_mem_usage() {
     echo "$(free | grep Mem | awk '{print $3/$2 * 100.0}')"
 }
 
-# Function to get disk usage
 get_disk_usage() {
     echo "$(df -h | grep '^/dev' | awk '{print $5 " " $1}')"
 }
 
-# Function to get network statistics
 get_network_stats() {
     echo "$(netstat -i | tail -n +3)"
 }
